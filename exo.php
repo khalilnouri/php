@@ -14,9 +14,9 @@
           <h1>Les exercices</h1>
           <h2>les execercices en php</h2>
           <ol>
-            <li>
-              premier exo
-            </li>
+            <li>premier exo</li> 
+            <a href="https://github.com/khalilnouri/php" target="_blank">github</a> 
+            <li>deuxiéme exo</li>
           </ol>
           
        </div>
