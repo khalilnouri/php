@@ -1,0 +1,10 @@
+dev:
+  scheme: ftp
+  host: khalil.jeffnys.fr
+  port: 21
+  user: khalil
+  pass: kFyXYmmN84yRFg
+  local: true
+  exclude: ["dploy.yaml", ".gitignore"]
+  path:
+      remote: public_html/
