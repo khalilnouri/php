@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <title>page vide</title>
+    <title>Exercice 2</title>
   </head>
   <body>
   <?php include("./partial/_navBar.php"); ?>
@@ -39,20 +39,20 @@
          * echo $result;
          */
         // TO DO
-        $key = strlen($message1);
+        $key = strlen($message1)/2;
         $subString = substr($message1, 5, $key);
         $message1AvecEspace = str_replace("@#?", " ", $subString);
-        $decodedMessage1 = $message1AvecEspace;
+        $decodedMessage1 = strrev($message1AvecEspace);
         // TO DO
-        $key = strlen($message2);
+        $key = strlen($message2)/2;
         $subString = substr($message2, 5, $key);
         $message2AvecEspace = str_replace("@#?", " ", $subString);
-        $decodedMessage2 = $message2AvecEspace;
+        $decodedMessage2 = strrev($message2AvecEspace);
         // TO DO
-        $key = strlen($message3);
+        $key = strlen($message3)/2;
         $subString = substr($message3, 5, $key);
         $message3AvecEspace = str_replace("@#?", " ", $subString);
-        $decodedMessage3 = $message3AvecEspace;
+        $decodedMessage3 = strrev($message3AvecEspace);
         ?>
         <p>résultats:</p>
         <p>message1: <?php echo $decodedMessage1 ?><br>

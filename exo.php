@@ -16,7 +16,8 @@
           <ol>
             <li>premier exo</li> 
             <a href="https://github.com/khalilnouri/php" target="_blank">github</a> 
-            <li>deuxiéme exo</li>
+            <a href="exo2.php" target="_blank"><li>deuxiéme exo</li></a>
+            
           </ol>
           
        </div>
