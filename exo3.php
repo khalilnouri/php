@@ -32,8 +32,11 @@
         <p>résultat:
             <?php
             // TO DO
+            // pour supprime un element 
             unset($tab1[4]);
+            // pour suprime le primier element
             array_shift($tab1);
+            // pour suprime le dernieur element
             array_pop($tab1);
             
             ?>
@@ -51,23 +54,27 @@
         <p>résultat:
             <?php
             // TO DO
-            
+            $startCaractere = "bleu vert noir rouge jaune";
+            //retourne un tableau de chaînes de caractères
+            $tab = explode(" " , $startCaractere);
+            //ajouter des éléments à un tableau
+            array_unshift($tab , "violet");
             
             ?>
-            <!--            <ul>
-                <li><?php // echo $tab1[0]; 
+            <ul>
+                <li><?php  echo $tab[0]; 
                     ?></li>
-                <li><?php // echo $tab1[1]; 
+                <li><?php  echo $tab[1]; 
                     ?></li>
-                <li><?php // echo $tab1[2]; 
+                <li><?php  echo $tab[2]; 
                     ?></li>
-                <li><?php // echo $tab1[3]; 
+                <li><?php  echo $tab[3]; 
                     ?></li>
-                <li><?php // echo $tab1[4]; 
+                <li><?php  echo $tab[4]; 
                     ?></li>
-                <li><?php // echo $tab1[5]; 
+                <li><?php  echo $tab[5]; 
                     ?></li>
-            </ul> -->
+            </ul>
         </p>
        </div>
 
