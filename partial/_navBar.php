@@ -13,7 +13,7 @@
                     <a class="nav-link active" href="/test.php">Test</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/exercices.php">Exo</a>
+                    <a class="nav-link active" href="/exo.php">Exo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="/notes.php">Notes</a>
