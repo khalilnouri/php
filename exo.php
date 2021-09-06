@@ -20,7 +20,7 @@
             <a href="exo3.php" target="_blank"><li>troisiéme exo</li></a>
             <a href="exo4.php" target="_blank"><li>quateriéme exo</li></a>
             <a href="exo5.php" target="_blank"><li>cinquiéme exo</li></a>
-            <a href="exo6.php" target="_blank"><li>sixiéme exo</li></a>
+           
           </ol>
           
        </div>
