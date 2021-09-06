@@ -14,12 +14,13 @@
           <h1>Les exercices</h1>
           <h2>les execercices en php</h2>
           <ol>
-            <li>premier exo</li> 
+            <li>premier exo : </li> 
             <a href="https://github.com/khalilnouri/php" target="_blank">github</a> 
             <a href="exo2.php" target="_blank"><li>deuxiéme exo</li></a>
             <a href="exo3.php" target="_blank"><li>troisiéme exo</li></a>
             <a href="exo4.php" target="_blank"><li>quateriéme exo</li></a>
             <a href="exo5.php" target="_blank"><li>cinquiéme exo</li></a>
+            <a href="exo6.php" target="_blank"><li>sixiéme exo</li></a>
            
           </ol>
           
