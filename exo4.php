@@ -11,7 +11,7 @@
 
 <div class="container">
 <h1>Exercice 4</h1>
-    
+<h1>1- créer une table de vigenère :</h1>
     <?php
     // TO DO
 
@@ -55,7 +55,7 @@ for($i = 0; $i < count($alphTab); $i++) {
 }
 
 
-    ?>
+    ?> <br>
     <h5>2- encode le message "APPRENDRE PHP EST UNE CHOSE FORMIDABLE" avec la clé "BACKEND"</h5>
     <?php
     $message = "APPRENDRE PHP EST UNE CHOSE FORMIDABLE";
