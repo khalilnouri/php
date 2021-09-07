@@ -16,12 +16,12 @@
           <ol>
             <li>premier exo : </li> 
             <a href="https://github.com/khalilnouri/php" target="_blank">github</a> 
-            <a href="exo2.php" target="_blank"><li>deuxiéme exo</li></a>
-            <a href="exo3.php" target="_blank"><li>troisiéme exo</li></a>
-            <a href="exo4.php" target="_blank"><li>quateriéme exo</li></a>
-            <a href="exo5.php" target="_blank"><li>cinquiéme exo</li></a>
-            <a href="exo6.php" target="_blank"><li>sixiéme exo</li></a>
-           
+            <a href="exo2.php" target="_blank"><li>deuxième exo</li></a>
+            <a href="exo3.php" target="_blank"><li>troisième exo</li></a>
+            <a href="exo4.php" target="_blank"><li>quaterième exo</li></a>
+            <a href="exo5.php" target="_blank"><li>cinquième exo</li></a>
+            <a href="exo6.php" target="_blank"><li>sixième exo</li></a>
+            <a href="exo7.php" target="_blank"><li>septième exo</li></a>
           </ol>
           
        </div>
