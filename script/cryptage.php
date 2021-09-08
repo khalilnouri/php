@@ -1,7 +1,4 @@
 <?php 
-
-
-
 // Initialisation de la table de Vigenère
 function createVigenere():array{
     $keyArr = [];
