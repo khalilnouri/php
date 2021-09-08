@@ -1,9 +1,1 @@
-{
-  "note": [
-    {
-      "title": "titer",
-      "note": "&lt;?php\r\ninclude('./script/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"
-    }
-    
-  ]
-}
+{"note":[{"title":"titer","note":"&lt;?php\r\ninclude('.\/script\/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"},{"title":"titer","note":"&lt;?php\r\ninclude('.\/script\/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"}]}

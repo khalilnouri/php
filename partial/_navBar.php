@@ -18,6 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="/notes.php">Notes</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/inscription.php">inscription</a>
+                </li>
             </ul>
         </div>
     </div>
