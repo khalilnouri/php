@@ -1,1 +1,21 @@
-{"note":[{"title":"titer","note":"&lt;?php\r\ninclude('.\/script\/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"},{"title":"titer","note":"&lt;?php\r\ninclude('.\/script\/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"}]}
+{
+  "note": [
+    {
+      "title": "titer",
+      "note": "&lt;?php\r\ninclude('./script/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"
+    },
+    {
+      "title": "titer",
+      "note": "&lt;?php\r\ninclude('./script/function.php');\r\n$data = openDB();\r\nvar_dump($data);\r\nif(!empty($_POST)){\r\n  $securizedDataFromFrom = treatFormData(\r\n    $_POST,\r\n    &quot;title&quot;,\r\n    &quot;note&quot;,\r\n  );\r\n  extract($securizedDataFromFrom, EXTR_OVERWRITE);\r\n}\r\nif(isset($title, $note)){\r\n  array_push($data['note'],[\r\n    'title'=&gt;$title,\r\n    'note'=&gt; $note,\r\n  ]);\r\n  writeDB($data);\r\n}\r\n$notes =$data[&quot;note&quot;];\r\n?&gt;"
+    }
+  ],
+  "user": [
+    {
+      "name": "khalil",
+      "firstName": "noouri",
+      "email": "weldtounesca12@gmail.com",
+      "password": "$argon2id$v=19$m=65536,t=4,p=1$V1A1ejFiU2VIblNkUUN5WQ$no4GNdJbDtTizSz3/W2a42lGSMnBEQ72mOPjS6HYvi0",
+      "role": ["ROLE_USER", "ROLE_ADMIN"]
+    }
+  ]
+}

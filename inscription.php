@@ -1,5 +1,32 @@
 <?php 
 session_start();
+include('./script/function.php');
+if(!empty($_POST)){
+  $securizedDataFromFrom = treatFormData(
+    $_POST,
+    "name",
+    "firstName",
+    "email",
+    "password",
+
+  );
+  extract($securizedDataFromFrom, EXTR_OVERWRITE);
+ $data = openDB();
+ $hashPassword = password_hash($password, PASSWORD_ARGON2ID);
+ array_push($data["user"],[
+   "name" => $name,
+   "firstName" => $firstName,
+   "email" => $email,
+   "password" => $hashPassword,
+   "role" => ["ROLE_USER"], 
+ ]);
+ writeDB($data);
+
+ header("Location: /connexion.php");
+}
+
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -20,19 +47,19 @@ session_start();
     <form action="" method="post">
       <div class="form-group">
         <label class="col-from-label" for="name">Nom : </label>
-        <input type="text" name="title" id="title" class="form-control border border-3">
+        <input type="text" name="name"  class="form-control border border-3">
       </div>
       <div class="form-group">
-        <label class="col-from-label" for="lastname">Prenom : </label>
-        <input type="text" name="title" id="title" class="form-control border border-3">
+        <label class="col-from-label" for="firstName">Prenom : </label>
+        <input type="text" name="firstName"  class="form-control border border-3">
       </div>
       <div class="form-group">
         <label class="col-from-label" for="email">Email : </label>
-        <input type="text" name="title" id="title" class="form-control border border-3">
+        <input type="text" name="email" class="form-control border border-3">
       </div>
       <div class="form-group">
-        <label class="col-from-label" for="passoword">Mot de passe : </label>
-        <input type="password" name="password" id="title" class="form-control border border-3">
+        <label class="col-from-label" for="password">Mot de passe : </label>
+        <input type="password"   class="form-control border border-3" name="password">
       </div>
       <input class="btn btn-primary mb-4 mt-3" type="submit" value="S'inscrire">
     </form>

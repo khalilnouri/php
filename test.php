@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('./script/function.php');
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,8 +15,15 @@
 
 </div>
 <?php
+if(in_array("ROLE_ADMIN", $_SESSION["user"]["role"])){
+  echo "vous etes admin";
+} 
+ else{
+    echo "vous  n'avez pas de role particulier";
+  }
    
-    ?>
+    
+?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 

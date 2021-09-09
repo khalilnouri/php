@@ -1,3 +1,7 @@
+<?php 
+session_start();
+include('./script/function.php');
+?>
 <?php
 include('./script/function.php');
 $data = openDB();
