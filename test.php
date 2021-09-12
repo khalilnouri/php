@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('./script/function.php');
+include('./script/functions.php');
 ?>
 <!doctype html>
 <html lang="en">

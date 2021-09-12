@@ -1,6 +1,5 @@
-<?php 
-include('script/globals.php');
-
+<?php
+include('./script/globals.php');
 /**
  * function de securize the form data
  * 
@@ -19,18 +18,12 @@ function treatFormData(array $data, string ...$wanted): array
     }
     return $values;
 }
-
-
 /**
  * function to extrat data from json file
  * if the re is nothing inside, the function put the "tab" from DBTABLE constant inside
  */
 function openDB(): array
 {
-    if(!file_exists(DBJSON)){
-        file_put_contents(DBJSON, "");
-    }
-    
     $data = file_get_contents(DBJSON);
     $array = json_decode($data, true);
     if (!$array) {
@@ -43,8 +36,6 @@ function openDB(): array
     }
     return $array;
 }
-
-
 /**
  * function to write data in DB
  */

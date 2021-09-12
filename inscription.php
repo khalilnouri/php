@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('./script/function.php');
+include('./script/functions.php');
 if(!empty($_POST)){
   $securizedDataFromFrom = treatFormData(
     $_POST,
