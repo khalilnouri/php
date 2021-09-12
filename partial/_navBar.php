@@ -18,16 +18,26 @@
                 <li class="nav-item active">
                     <a class="nav-link " href="/notes.php">Notes</a>
                 </li>
+                <?php if($_SESSION["user"]):
+                    if(in_array("ROLE_ADMIN", $_SESSION["user"]["role"])):  ?>
                 <li class="nav-item active">
-                    <a class="nav-link " href="/inscription.php">inscription</a>
+                    <a class="nav-link " href="/admin.php">Admin</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link " href="/connexion.php">Connexion</a>
-                </li>
+               <?php endif ?>
                 <li class="nav-item active">
                     <a class="nav-link btn btn-primary " href="/deconnection.php">Déconnection</a>
                 </li>
+                <?php else: ?>
+                <li class="nav-item active">
+                    <a class="nav-link " href="/inscription.php">inscription</a>
+                </li>
+               
+                <li class="nav-item active">
+                    <a class="nav-link " href="/connexion.php">Connexion</a>
+                </li>
                 
+                
+                <?php endif ?>
             </ul>
         </div>
     </div>
